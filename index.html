@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="calculadora">
+        <section class="content">
+            <form>
+                <input type="text" name="" id="display" value="" readonly />
+            </form>
+            <div class="numpad">
+                <button class="num op" onclick="operacion('(')">(</button>
+                <button class="num op" onclick="operacion(')')">)</button>
+                <button class="num op" onclick="operacion('%')">%</button>
+                <button class="num op" id="del" onclick="onDelete()">AC</button>
+                <button class="num" id="7" onclick="operacion(this.id)">7</button>
+                <button class="num" id="8" onclick="operacion(this.id)">8</button>
+                <button class="num" id="9" onclick="operacion(this.id)">9</button>
+                <button class="num op" onclick="operacion('/')">÷</button>
+                <button class="num" id="4" onclick="operacion(this.id)">4</button>
+                <button class="num" id="5" onclick="operacion(this.id)">5</button>
+                <button class="num" id="6" onclick="operacion(this.id)">6</button>
+                <button class="num op" onclick="operacion('*')">×</button>
+                <button class="num" id="1" onclick="operacion(this.id)">1</button>
+                <button class="num" id="2" onclick="operacion(this.id)">2</button>
+                <button class="num" id="3" onclick="operacion(this.id)">3</button>
+                <button class="num op" onclick="operacion('-')">-</button>
+                <button class="num" id="0" onclick="operacion(this.id)">0</button>
+                <button class="num" onclick="operacion('.')">.</button>
+                <button class="num equal" onclick="evalMath()">=</button>
+                <button class="num op" onclick="operacion('+')">+</button>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js.map" type="text/plain"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.min.js" type="text/javascript"></script>
+</body>
+</html>
